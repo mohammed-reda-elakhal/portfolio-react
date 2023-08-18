@@ -1,0 +1,68 @@
+#contact{
+    height: max-content;
+}
+.container.contact_container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 38% 50%;
+    gap: 12%;
+}
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.option{
+    background: var(--bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.option:hover{
+    background: transparent;
+    border-color:var(--bg-variant) ;
+}
+.contact_icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+.option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+.option h5{
+    color: var(--light);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--primary-variant);
+    resize: none;
+    color: var(--white);
+}
+
+/*--------------------Media query ( meduam device )---------------------------*/
+@media screen and (max-width:1024px){
+    .container.contact_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/*--------------------Media query ( small devic )---------------------------*/
+@media screen and (max-width:600px){
+    .container.contact_container{
+       width: var(--container-with-sm);
+    }
+}

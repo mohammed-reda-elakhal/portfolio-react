@@ -1,0 +1,84 @@
+.services_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+#services{
+    height: max-content;
+}
+
+:root{
+    --bg:#1f1f38;
+    --bg-variant:#2c2c6c;
+    --primary:#4db5ff;
+    --primary-variant:rgba(77,181,255,0.4);
+    --white:white;
+    --light:rgba(255,255,255,0.6);
+
+    --transition: all 400ms ease;
+
+    --container-with-lg:75%;
+    --container-with-md:86%;
+    --container-with-sm:90%;
+}
+.service{
+    background: var(--bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid var(--primary);
+    height: fit-content;
+    transition: var(--transition);
+}
+.service:hover{
+    background: transparent;
+    border-color: var(--primary-variant);
+    cursor: default;
+}
+.service_head{
+    background: var(--primary);
+    padding: 2rem;
+
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service_head h3{
+    color: var(--bg);
+    font-size: 1rem;
+    text-align: center;
+}
+.service_list{
+    padding: 2rem;
+}
+.service_list li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom:0.8rem ;
+}
+.service_list-icon{
+    color: var(--primary);
+    margin-top: 2px;
+    font-size: 2rem;
+}
+.service_lis p{
+    font-size: 0.9rem;
+}
+
+
+/*--------------------Media query ( meduam device )---------------------------*/
+@media screen and (max-width:1024px){
+    .services_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .service{
+        height: auto;
+    }
+}
+
+/*--------------------Media query ( small devic )---------------------------*/
+@media screen and (max-width:600px){
+    .services_container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

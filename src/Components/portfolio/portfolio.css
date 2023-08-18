@@ -1,0 +1,62 @@
+
+#portfolio{
+    height: max-content;
+}
+:root{
+    --bg:#1f1f38;
+    --bg-variant:#2c2c6c;
+    --primary:#4db5ff;
+    --primary-variant:rgba(77,181,255,0.4);
+    --white:white;
+    --light:rgba(255,255,255,0.6);
+
+    --transition: all 400ms ease;
+
+    --container-with-lg:75%;
+    --container-with-md:86%;
+    --container-with-sm:90%;
+}
+
+.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    width: 80%;
+    margin: auto;
+}
+.portfolio_item{
+    background:var(--bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.portfolio_item:hover{
+    background: transparent;
+    border-color: var(--primary-variant);
+}
+.portfolio_img{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio_item h3{
+    margin: 1.2rem 0 2rem;
+}
+
+
+/*--------------------Media query ( meduam device )---------------------------*/
+@media screen and (max-width:1024px){
+   .portfolio_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+   }
+}
+
+/*--------------------Media query ( small devic )---------------------------*/
+@media screen and (max-width:600px){
+    .portfolio_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+   }
+}
