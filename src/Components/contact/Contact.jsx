@@ -45,9 +45,9 @@ const Contact = () => {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" id="" placeholder='Your full name' required/>
-          <input type="email" name='email' placeholder='Your email' required />
-          <textarea name="message" rows="7" placeholder='Your message' required></textarea>
+          <input className="input_contact" type="text" name="name" id="" placeholder='Your full name' required/>
+          <input className="input_contact" type="email" name='email' placeholder='Your email' required />
+          <textarea className="input_contact" name="message" rows="7" placeholder='Your message' required></textarea>
           <button className="btn btn-primary" type='submit'>Send Message</button>
         </form>
       </div>

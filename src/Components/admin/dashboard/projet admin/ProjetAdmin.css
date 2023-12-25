@@ -1,0 +1,9 @@
+.img_projet img{
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+.image_uploaded{
+    width: 400px;
+    height: auto;
+}

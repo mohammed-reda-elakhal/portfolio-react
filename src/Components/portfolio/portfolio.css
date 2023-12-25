@@ -36,14 +36,30 @@
     border-color: var(--primary-variant);
 }
 .portfolio_img{
-    border-radius: 1.5rem;
+    border-radius: 10px;
     overflow: hidden;
 }
 
 .portfolio_item h3{
-    margin: 1.2rem 0 2rem;
+    margin: rem 0 2rem;
+    padding-top: 1rem;
 }
-
+.title_projet{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    border-bottom: #4db5ff solid 1px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+.des_projet{
+    font-size: 12px;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+a{
+    margin: 0 2px;
+}
 
 /*--------------------Media query ( meduam device )---------------------------*/
 @media screen and (max-width:1024px){

@@ -42,7 +42,7 @@ form{
     flex-direction: column;
     gap: 1.2rem;
 }
-input,textarea{
+.input_contact{
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;

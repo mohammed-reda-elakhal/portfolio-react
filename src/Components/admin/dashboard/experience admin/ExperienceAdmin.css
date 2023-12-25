@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg:#1f1f38;
+    --bg-variant:#2c2c6c;
+    --primary:#4db5ff;
+    --primary-variant:rgba(77,181,255,0.4);
+    --white:white;
+    --light:rgba(255,255,255,0.6);
+
+    --transition: all 400ms ease;
+
+    --container-with-lg:75%;
+    --container-with-md:86%;
+    --container-with-sm:90%;
+}
+
+.admin{
+    display: flex;
+}
+.container_experience{
+    transform: translateX(230px);
+    display: flex;
+    flex-direction: column;
+    width:70vw;
+    border-left:1px solid var(--bg-variant);
+    margin-left: 10px;
+    min-height: 100vh;
+    margin-left: 10px;
+    border-left: 1px solid  var(--bg-variant);
+}
+.container_experience h1{
+    margin: 0px auto;
+    font-weight: bolder;
+    color: var(--primary);
+    padding: 4px 0;
+    border-bottom: 2px solid var(--primary);
+}
+.table_experience{
+    border-collapse: collapse;
+    margin: 32px 0px;
+    font-size: 0.9em;
+    min-width: 80vw;
+    transform: translateX(16px);
+}
+.table_experience thead tr{
+    background: var(--primary);
+    color: var(--bg);
+    text-align: left;
+    font-weight: bolder;
+}
+.table_experience th , .table_experience td{
+    padding: 8px 16px;
+    border-right: 1px solid var(--bg);
+}
+.table_experience tbody{
+    background: var(--bg-variant);
+}
+.table_experience tbody tr{
+    border-bottom: 1px solid var(--bg);
+}
+.table_experience tbody tr:last-of-type{
+    border-bottom: 3px solid var(--primary);
+}
+.top_btn{
+    transform: translateX(16px);
+    margin-top: 3em;
+}
+.new_btn{
+    padding: 8px 16px;
+    border-radius: 4px;
+   
+    background: var(--primary);
+    font-weight: bolder;
+    color: var(--bg);
+    cursor: pointer;
+}
+.action_content{
+    display: flex;
+    align-items: center;
+}
+
+.btn_action_u , .btn_action_d{
+    color: var(--bg);
+    background: var(--primary);
+    font-size: 1.2em;
+    padding: 0 4px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn_action_d{
+    transform: translateX(8px);
+}
+.field_items select{
+    background: var(--bg-variant);
+    padding: 8px;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.field_items select option{
+    background: var(--bg);
+}

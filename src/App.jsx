@@ -8,6 +8,8 @@ import Nav from './Components/nav/Nav.jsx'
 import Portfolio from './Components/portfolio/Portfolio.jsx'
 import Services from './Components/services/Services.jsx'
 import Testimonials from './Components/testimonials/Testimonials.jsx'
+import { BrowserRouter , Routes , Route} from 'react-router-dom'
+import Login from './Components/admin/Login.jsx'
 
 const App = () => {
 
@@ -25,6 +27,7 @@ const App = () => {
       <Testimonials/>
       <Contact/>
       <Footer/>
+      
     </>
   )
 }

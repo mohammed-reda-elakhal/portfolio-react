@@ -24,7 +24,6 @@
 .about_img{
     border-radius: 2rem;
     overflow: hidden;
-    transform: rotate(10deg);
     transition: var(--transition);
 }
 
@@ -64,7 +63,7 @@
     color: var(--light);
 }
 .about_content p{
-    margin: 2rem 0 2.6rem;
+    margin: 1rem 0 ;
     color: var(--light);
 }
 

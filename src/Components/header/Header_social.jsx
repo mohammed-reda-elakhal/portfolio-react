@@ -1,17 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {BsLinkedin , BsInstagram , BsGithub} from 'react-icons/bs'
+import axios from 'axios';
 
 
 const Header_social = () => {
+  const [user, setUser] = useState({ description: '' });
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/api/user/4')
+      .then(res => setUser(res.data))
+      .catch(err => console.log(err.message));
+  }, []);
   return (
     <div className='Header_social'>
-        <a href="www.instagram.com" target='_blank'>
+        <a href={user.instagram} target='_blank'>
             <BsInstagram/>
         </a>
-        <a href="www.github.com"  target='_blank'>
+        <a href="https://github.com/mohammed-reda-elakhal"  target='_blank'>
             <BsGithub/>
         </a>
-        <a href="www.linkedin.com"  target='_blank'>
+        <a href={user.linkedin}  target='_blank'>
             <BsLinkedin/>
         </a>
     </div>
